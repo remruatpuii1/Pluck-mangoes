@@ -12,7 +12,7 @@ class stone
 
         this.body=Bodies.circle(x,y,r,options);
         this.r=r;
-        this.image=loadImage("images/stone.png");
+        this.image=loadImage("stone.png");
         World.add(world,this.body);
     }
 

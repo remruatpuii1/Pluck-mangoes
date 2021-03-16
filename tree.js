@@ -8,9 +8,9 @@ class tree
 		this.treeHeight=600;
 		this.treeThickness=10;
 		
-		this.image=loadImage("images/tree.png")
-		this.bottomBody=Bodies.rectangle(this.x, this.y, this.treeWidth, this.treeThickness, {isStatic:true})
-		World.add(world, this.bottomBody)
+		this.image=loadImage("tree.png");
+		this.bottomBody=Bodies.rectangle(this.x, this.y, this.treeWidth, this.treeThickness, {isStatic:true});
+		World.add(world, this.bottomBody);
 
 	}
 	

@@ -10,7 +10,7 @@ var mango1;
 var world,boy;
 
 function preload(){
-	boy=loadImage("images/boy.png");
+	boy=loadImage("boy.png");
   }
 
 function setup() {
@@ -36,7 +36,7 @@ function setup() {
 
 function draw() {
 
-  background(230);
+  background("lightblue");
   
   image(boy ,200,340,200,300);
   

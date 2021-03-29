@@ -6,7 +6,7 @@ const Body = Matter.Body;
 const Render = Matter.Render;
 const Constraint=Matter.Constraint;
 var treeObj, stoneObj,groundObject, launcherObject;
-var mango1;
+var mango1,chain;
 var world,boy;
 
 function preload(){
@@ -70,15 +70,15 @@ function mouseDragged()
 {
 	Matter.Body.setPosition(stoneObj.body,{x:mouseX,y:mouseY});
 }
-function mouseRealesed()
+function mouseReleased()
 {
-	string.fly();
+	launcherObject.fly();
 }
 function keyPressed()
 {
   if(keyCode===32)
   {
     Matter.Body.setPosition(stoneObj.body,{x:235,y:420});
-    string.attacher(stoneObj.body);
+    launcherObject.attacher(stoneObj.body);
   }
 }

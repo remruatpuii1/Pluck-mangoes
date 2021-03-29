@@ -6,7 +6,7 @@ class String
     {
         bodyA:bodyA,
         pointB:pointB,
-        length:10,
+        length:1,
         stiffness:0.04
 
     }
@@ -14,14 +14,13 @@ class String
     this.chain=Constraint.create(options);
     World.add(world,this.chain);
     }
-   
+    attacher(body)
+    {
+        this.chain.bodyA = body;
+    }
     fly()
     {
-        this.chain.bodyA=null;
-    }
-    attacher(bodyA)
-    {
-        this.chain.bodyA=bodyA;
+        this.chain.bodyA = null;
     }
     display()
     {
